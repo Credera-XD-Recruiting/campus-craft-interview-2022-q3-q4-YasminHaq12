@@ -17,7 +17,7 @@
   width: 100%;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: var(--grayscale_1);
   padding: 16px 24px;
   border-radius: 10px;
@@ -28,7 +28,7 @@
 }
 
 .profile-list-item .top-friend-flag {
-  display: none;
+  color:black
 }
 
 .profile-list-item .top-friend-flag + .page-paragraph {

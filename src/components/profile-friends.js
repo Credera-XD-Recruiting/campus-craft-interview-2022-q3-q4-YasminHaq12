@@ -15,10 +15,19 @@ const generateListItemNode = (data) => {
   const titleNode = clone.querySelector("p.page-micro");
   const avatarNode = clone.querySelector(".profile-list-item-avatar");
 
+
   nameNode.innerHTML = `${name}`;
   titleNode.innerHTML = `${jobTitle} @ ${companyName}`;
   avatarNode.src = avatarSrc;
   avatarNode.setAttribute("aria-label", `${name}`);
+
+  if (topFriend = true) {
+    const top_friend = document.getElementsByClassName("top-friend-flag page-xs");
+    top_friend.innerHTML = "Top Friend";
+
+    
+  
+  }
 
   if (avatarSrc) {
     const avatarImg = document.createElement("img");
@@ -26,6 +35,9 @@ const generateListItemNode = (data) => {
     avatarImg.setAttribute("aria-label", `${name}`);
     avatarNode.appendChild(avatarImg);
   }
+
+ 
+
 
   return clone;
 };
